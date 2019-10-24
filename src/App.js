@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, Switch } from 'react-router-dom';
 import About from './About';
 import Home from './Home';
 import Profiles from './Profiles';
@@ -23,10 +23,21 @@ const App = () => {
         </li>
       </ul>
       <hr />
-      <Route path="/" component={Home} exact={true} />
-      <Route path={["/about", "/info"]} component={About} />
-      <Route path="/profiles" component={Profiles} />
-      <Route path="/history" component={HistorySample} />
+      <Switch>
+        <Route path="/" component={Home} exact={true} />
+        <Route path={["/about", "/info"]} component={About} />
+        <Route path="/profiles" component={Profiles} />
+        <Route path="/history" component={HistorySample} />
+        <Route
+          // path를 따로 지정 안하면 모든 상황서 렌더링댐
+          render={({ location }) => (
+            <div>
+              <h2>이 페이지는 존재 안함 ㅋㅋ</h2>
+              <p>{location.pathname}</p>
+            </div>
+          )}
+        />
+      </Switch>
     </div>
   );
 };
