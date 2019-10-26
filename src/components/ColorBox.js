@@ -13,13 +13,13 @@ const ColorBox = () => {
               background: state.color
             }}
           />
-        <div
-          style={{
-            width: '32px',
-            height: '32px',
-            background: state.subcolor
-          }}
-        />
+          <div
+            style={{
+              width: '32px',
+              height: '32px',
+              background: state.subcolor
+            }}
+          />
         </>
       )}
     </ColorConsumer>
