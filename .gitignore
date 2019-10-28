@@ -2,6 +2,9 @@
 
 goorm.manifest
 
+/.cache
+/dist
+
 # dependencies
 /node_modules
 /.pnp
