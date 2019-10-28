@@ -48,7 +48,7 @@ const todos = handleActions(
       }),
     [TOGGLE]: (state, { payload: id }) => 
       produce(state, draft => {
-        const todo = dreaft.todos.find(todo => todo.id === id);
+        const todo = draft.todos.find(todo => todo.id === id);
         todo.done = !todo.done;
       }),
     [REMOVE]: (state, { payload: id }) => 
