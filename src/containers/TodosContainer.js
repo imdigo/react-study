@@ -27,4 +27,7 @@ const TodosContainer = () => {
   );
 };
 
+// You might write the line below as
+// export default React.memo(TodosContainer);
+
 export default TodosContainer;
