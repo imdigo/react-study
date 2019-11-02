@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState, Suspense } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const SplitMe = React.lazy(() => import('./SplitMe'));
+
 function App() {
+  const [visible, setVisible] = useState(false);
   const onClick = () => {
-    import ('./notify').then(result => result.default());
+    setVisible(true);
   };
   return (
     <div className="App">
@@ -13,6 +16,9 @@ function App() {
         <p onClick={onClick}>
           Hi
         </p>
+        <Suspense fallback={<div>Loading...</div>}>
+          {visible && <SplitMe />}
+        </Suspense>
         
       </header>
     </div>
