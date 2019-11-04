@@ -3,9 +3,6 @@
 goorm.manifest
 .gitpod.yml
 
-/.cache
-/dist
-
 # dependencies
 /node_modules
 /.pnp
