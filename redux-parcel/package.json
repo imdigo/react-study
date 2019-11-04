@@ -1,0 +1,11 @@
+{
+  "name": "pil0t_react_study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/imdigo/react-study.git",
+  "author": "PIl0T <limdongyoung0@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "redux": "^4.0.4"
+  }
+}
