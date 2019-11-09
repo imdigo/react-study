@@ -2,6 +2,8 @@
 
 goorm.manifest
 
+.env
+
 # dependencies
 /node_modules
 /.pnp
