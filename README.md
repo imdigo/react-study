@@ -1,2 +1,2 @@
 # react-study
-DoLim React JS Study Repo
+DoLim React.JS Study Repo
